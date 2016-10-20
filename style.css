@@ -1,0 +1,71 @@
+body * {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+fieldset {
+    border: 0;
+    box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #000;
+}
+
+fieldset div {
+    display: block;
+    padding: 5px 0;
+    font-size: 0;
+}
+
+label {
+    display: inline-block;
+    padding: 0 5px 0 10px;
+    width: 200px;
+    font-size: 14px;
+}
+
+input {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    transition: ease-in 200ms;
+}
+
+input:not(.button) {
+    width: calc(100% - 200px);
+    box-shadow: inset -1px -1px 0 #000, inset 1px 1px 0 #000;
+    padding: 10px;
+}
+
+input.button {
+    background: #000;
+    color: #fff;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+input.button.is-valid {
+    background: green;
+}
+
+input.button:not([disabled]):hover {
+    background: #666;
+}
+
+input:not(.button):focus {
+    box-shadow: inset -2px -2px 0 #000, inset 2px 2px 0 #000;
+}
+
+input:disabled {
+    background: #ddd;
+}
+
+input.dirty.is-valid {
+    box-shadow: inset -2px -2px 0 green, inset 2px 2px 0 green;
+}
+
+input.dirty.not-valid {
+    box-shadow: inset -2px -2px 0 red, inset 2px 2px 0 red;
+}

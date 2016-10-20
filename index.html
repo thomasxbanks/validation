@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="/">
+        <fieldset>
+            <div><label for="uName">Full Name</label><input class="pristine not-valid" name="uName" type="text" placeholder="Joe Bloggs" required></div>
+            <div><label for="uEmail">Email Address</label><input class="pristine not-valid" name="uEmail" type="email" placeholder="joe@joebloggs.com" required></div>
+            <div><label for="uPhone">Phone Number</label><input class="pristine not-valid" name="uPhone" type="phone" placeholder="0161 016 1016" required></div>
+            <div>
+                <input disabled class="button" type="submit" value="Submit">
+                <input class="button" type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="validation.js"></script>
+</body>
+
+</html>
